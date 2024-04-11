@@ -1,0 +1,6 @@
+pandas
+pydantic
+pandera
+pandera[hypotheses]
+pandera[io]
+pandera[strategies]

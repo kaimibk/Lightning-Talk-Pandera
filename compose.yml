@@ -1,0 +1,14 @@
+services:
+  jupyterlab:
+    build:
+      context: .
+      dockerfile: ./services/jupyterlab/Dockerfile
+    ports: [ "${JUPYTERLAB_PORT-8888}:8888" ]
+    networks: [ app-net ]
+    volumes:
+      - ./notebooks:/app/notebooks
+    environment:
+      JUPYTER_TOKEN: "$JUPYTER_TOKEN"
+
+networks:
+  app-net: {}
