@@ -1,5 +1,5 @@
 # Build requires the root as the context as it COPYs from a shared library.
-FROM quay.io/jupyter/scipy-notebook:lab-4.1.2
+FROM quay.io/jupyter/scipy-notebook:python-3.11.8
 WORKDIR /app
 LABEL maintainer="Kahihikolo_Kaimi@bah.com"
 
